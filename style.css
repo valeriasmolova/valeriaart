@@ -29,6 +29,7 @@ body {
   max-width: var(--sirkawebu); /* Maximální šířka stránky */
   margin: 0 auto; /* Vycentrování stránky */
   padding: 20 20px; /* Vnitřní odsazení pro menší obrazovky */
+  scroll-behavior: smooth;
 }
 
 header {
@@ -37,8 +38,7 @@ header {
   width: var(--sirkawebu);
   max-width: var(--sirkawebu);
   height: 434px;
-  font-size: var(--h5);   
-
+  font-size: var(--h5);
 
   margin: 0;
   position: relative;
@@ -46,19 +46,18 @@ header {
 }
 
 nav a {
-  text-decoration: none; 
-  color: var(--dgreen); 
+  text-decoration: none;
+  color: var(--dgreen);
 }
 
 nav a:hover {
-  color: var(--patickovabarva); 
+  color: var(--patickovabarva);
 }
 
 nav a:active {
-  color: var(--patickovabarva); 
-
+  color: var(--patickovabarva);
 }
-   
+
 nav a:visited {
   color: var(--dgreen);
 }
@@ -118,7 +117,6 @@ button {
 
 a {
   text-decoration: none; /* Remove underline from links */
-  ;
 }
 a {
   color: var(--white); /*  barva odkazu */
@@ -329,6 +327,7 @@ nav ul li a {
   height: 330px;
   align-items: left;
   margin: 0px auto; /* Vycentrování na stránce */
+  margin-bottom: 50px;
 }
 
 #footer a {
@@ -347,13 +346,13 @@ nav ul li a {
 }
 
 .logopaticka {
-  transform: scale(1.5);
-
+  transform: scale(1);
   vertical-align: bottom;
-  position: absolute;
-  justify-items:baseline ;
-  margin: 70px 250px; /* Vycentrování obrázku */
-
+  position: relative;
+  justify-items: right;
+  margin: 0px 450px; /* Vycentrování obrázku */
+  margin-right: 50px;
+  margin-bottom: -50px;
   z-index: 1;
 }
 
@@ -444,28 +443,4 @@ nav ul li a {
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
-}
-/*.close-lightbox-up {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 2rem;
-  text-decoration: none;
-  color: var(--dgreen);
-  background-color: var(--white);
-  padding: 0px 15px;
-  border-radius: 5px;
-  z-index: 10;
-}
-
-.close-lightbox-down {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: var(--dgreen);
-  color: var(--white);
-  text-decoration: none;
-  border-radius: 7px;
-  align-items: right;
- 
 }
