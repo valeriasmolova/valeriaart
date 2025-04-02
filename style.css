@@ -236,33 +236,31 @@ nav ul li a {
 .portret {
   z-index: -3; /* Nižší hodnota než Rectangle-bottom */
   position: relative;
-  transform: rotate(3deg) scale(1.3);
-  right: 90px;
-  bottom: -70px;
+  transform: rotate(3deg) scale(1.2);
+  right: 30px;
+  bottom: -105px;
 
   display: block; /* zarovnání */
   justify-items: right;
 
   margin: -390px auto;
   margin-right: 0px; /* Vycentrování obrázku */
-
-  overflow: visible; /* při přetečení */
 }
 
 .rotated-image2 {
   z-index: 1; /* Nižší hodnota než Rectangle-bottom */
   position: relative; /* Ujistěte se, že má nastavenou pozici */
-  transform: rotate(0deg) scale(0.9);
-  right: -20px;
-  top: 150px;
+  transform: rotate(0deg) scale(0.7);
+  right: -90px;
+  top: 180px;
 
   display: block; /* Zajistí správné zarovnání */
   justify-items: right;
 
-  margin: 00px auto;
+  margin: 0px auto;
   margin-right: 0px; /* Vycentrování obrázku */
   max-width: var(--sirkawebu);
-  overflow: visible; /* Zajistí, že obsah nebude skryt při přetečení */
+  overflow: visible; /* při přetečení */
 }
 
 .vertical-linegreen {
@@ -303,32 +301,20 @@ nav ul li a {
 }
 
 .textboxpaticka {
-  padding-top: var(--bocniborder);
   padding-left: var(--bocniborder);
+  padding-top: var(--bocniborder);
+  padding-bottom: calc((var(--bocniborder) - (0.5 * (var(--bocniborder)))));
+
   color: var(--patickovabarva);
   font-size: var(--pagetext);
-  text-align: justify;
+  text-align: left;
   background-color: var(--dgreen);
 }
 
 #footer h1 {
-  font-size: var(--h1);
   color: var(--patickovabarva);
-  margin-left: var(--bocniborder);
-  margin-top: -30px;
-}
-.footer-box {
-  font-size: var(--h3);
-  background-color: var(--dgreen); /* Barva pozadí (zelená) */
-  color: var(--patickovabarva); /* Barva textu */
-  padding: 0px; /* Vnitřní odsazení */
-  border-radius: 7px; /* Zaoblené rohy (volitelné) */
-  text-align: left; /* Zarovnání textu na střed */
-  width: 500px;
-  height: 330px;
-  align-items: left;
-  margin: 0px auto; /* Vycentrování na stránce */
-  margin-bottom: 50px;
+  margin-left: -(var(--bocniborder));
+  margin-top: -40px;
 }
 
 #footer a {
