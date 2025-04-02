@@ -158,6 +158,7 @@ h1 {
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 0px;
+  max-width: max-content;
 }
 
 #textboxitalic {
